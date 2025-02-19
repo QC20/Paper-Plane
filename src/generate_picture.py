@@ -15,7 +15,7 @@ def choose_prompt(filename: str):
 
 parser = argparse.ArgumentParser(description="Generate a new random picture.")
 parser.add_argument("output_dir", help="Directory to save the output images")
-parser.add_argument("--prompts", default="prompts/flowers.json", help="The prompts file to use")
+parser.add_argument("--prompts", default="prompts/styles.json", help="The prompts file to use")
 parser.add_argument("--prompt", default="", help="The prompt to use")
 parser.add_argument("--seed", default=random.randint(1, 10000), help="The seed to use")
 parser.add_argument("--steps", default=5, help="The number of steps to perform")
